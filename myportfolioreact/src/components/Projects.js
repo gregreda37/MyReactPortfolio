@@ -10,6 +10,8 @@ import twentyTinyHome from './twentyTinyHome.jpeg';
 import twentyfourTinyHome from './twentyfourTinyHome.jpg';
 import staircase from './staircase.jpg'
 import garden from './garden.jpg'
+import reactLogo from './reactLogo.png'
+import JoinScreen from './JoinScreen.jpg'
 
 class Projects extends Component {
     constructor(props){
@@ -154,34 +156,47 @@ class Projects extends Component {
         return(
             <div className="projects-grid">
             <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
-                    <CardTitle style={{color:'black', height:'275px', background: "url(" + boxStackerLogo + ") center / cover"}}>
-                        <h1 className="project-background">Box Stacker</h1>
+                    <CardTitle style={{color:'black', height:'275px', background: "url(" + reactLogo + ") center / cover"}}>
+                        <h1 className="project-background">Portfolio Website</h1>
                     </CardTitle>
                     <CardText>
-                    Programed used C# and Unity
+                    Programmed using React.js and MDL Bootstrap
                     </CardText>
                     <CardActions  border>
                         <Button>
                         
                             <div className= "button-color">
                             <i className="fa fa-github-square"  aria-hidden="true"/>
-                            <a href="https://github.com/gregreda37/ToolClassifierApp" rel="noopener noreferrer" target="_blank">GitHub</a>
-                            
+                            <a href="https://github.com/gregreda37/MyReactPortfolio" rel="noopener noreferrer" target="_blank">GitHub</a>
                             </div>
                         </Button>
-                        <Button>
-                        <div className= "button-color">
-                            <i className="fa fa-apple"  aria-hidden="true"/>
-                            <a href="https://apps.apple.com/us/app/tool-classifier/id1486603456" rel="noopener noreferrer" target="_blank">App Store</a>
-                            </div>
-                        </Button>
-                        
                     </CardActions>
 
                     <CardMenu style={{color:'#fff'}}>
                         <IconButton name="share"/>
                     </CardMenu>
                 </Card>
+            <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
+                <CardTitle style={{color:'black', height:'275px', background: "url(" + JoinScreen + ") center / cover"}}>
+                    <h1 className="project-background">Chat Application</h1>
+                </CardTitle>
+                <CardText>
+                This is my chat application using Heroku for the server and Github Pages
+                </CardText>
+                <CardActions  border>
+                    <Button>
+                    
+                        <div className= "button-color">
+                        <i className="fa fa-github-square"  aria-hidden="true"/>
+                        <a href="https://github.com/gregreda37/chat-application" rel="noopener noreferrer" target="_blank">GitHub</a>
+                        </div>
+                    </Button>
+                </CardActions>
+
+                <CardMenu style={{color:'#fff'}}>
+                    <IconButton name="share"/>
+                </CardMenu>
+            </Card>
 
             </div>
         )
@@ -356,7 +371,7 @@ class Projects extends Component {
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId)=> this.setState({activeTab: tabId})} ripple>
                     <Tab>Swift</Tab>
                     <Tab>Android</Tab>
-                    <Tab>C#</Tab>
+                    <Tab>Web</Tab>
                     <Tab>Carpentry</Tab>
                     <Tab>Tiny Homes</Tab>
                 </Tabs>

@@ -17,7 +17,7 @@ class Landing extends Component {
                             <h1>Full Stack Developer</h1>
 
                             <hr/>
-                            <p>HTML/CSS | Bootstrap | Javascript | React Native | Node.js</p>
+                            <p>Swift | Javascript | Adobe Cloud | React Native | Node.js</p>
                             {/* This is going to be our linkedin */}
                             <div className="social-links">
                                 <a href="https://www.linkedin.com/in/gregreda/" rel="noopener noreferrer" target="_blank">
